@@ -1,0 +1,62 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: pink;
+}
+form {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	font-size: 30px;
+	margin-top: 100px;
+}
+.field {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+#buttons-w {
+	display: flex;
+}
+.field-value {
+	font-size: 30px;
+}
+.button {
+	position: relative;
+	display: block;
+	top: 0;
+	padding: 15px;
+	border-radius: 20px;
+	background: #55CCAA;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	margin-left: 0;
+}
+#pow {
+	margin-left: 10px;
+}
+#result {
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+#homeBtn {
+	position: relative;
+	display: block;
+	padding: 15px;
+	margin-top: 10px;
+	background: #ff5555;
+	border: 1px solid #ccc;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#homeBtn:hover {
+	background: #e43434;
+}

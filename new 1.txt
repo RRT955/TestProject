@@ -1,0 +1,96 @@
+def main():
+   server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   server_socket.(1)___(("0.0.0.0", protocol.PORT)) 1. bind
+   server_socket.(2)___() 2.listen
+   print("Server is up and running")
+   (client_socket, client_address) = server_socket.(3)___() 3.accept
+   print("Client connected")
+
+POP3:
+• Emails are stored on a single device.
+• Sent messages are stored on a single device.
+• Emails can only be accessed from a single device.
+• If you want to keep messages on the server, 
+  make sure the setting "Keep email on server" is enabled or all messages 
+  are deleted from the server once downloaded to the app or software.
+
+IMAP:
+• Emails are stored on the server.
+• Sent messages are stored on the server.
+• Messages can be synced and accessed across multiple devices.
+
+ICMP:
+לכל פקט שמסתובב ברשת יש ערך
+TTL
+שמציין כמה תחנות נשארו לו לעבור עד שיגיע ליעד
+בכל תחנה ערך זה יורד ב 1
+אם ערך זה נהיה 0 וכתובת היעד של הפקט לא מתאים
+לכתובת התחנה הנוכחית אזי הפרט נזרק ונשלחת הודעה על
+כך לשולח על ידי פרוטוקול
+ICMP
+
+TCP:
+דף אינטרנט עם 3 תמונות, זמן העברת אובייקט
+t
+1) non persistent http, no parallel connections:
+   rtt = 2 * rtt + 3 * (2 * rtt + t) = 8 * rtt + 3 * t
+2) non persistent http, 2 parallel connections:
+   rtt = 2 * rtt + 2 * (2 * rtt + t) + 2 * rtt + t + 6 * rtt + 2 * t
+         setup     2 pictures          3rd picture
+3) persistent http, no parallel connections:
+   rtt = 2 * rtt + 3 * (rtt + t) = 5 * rtt + 3 * t
+         setup     3 pictures
+4) persistent http, with parallelization (עם חפיפה)
+   rtt = 2 * rtt + rtt + t                         
+                   for all the pictures at once    
+                         t for all the pictures together
+
+2 first rtt of TCP: first for setup and second for data transmission.
+
+DNS is over UDP.
+VoIP is over UDP.
+DNS request: sum(i=0 to n) of rtt(i) 
+
+חפיפה היא שהלקוח שולח סגמנטים ולא ממתין עד שיקבל אישור על כל ססגמנט אלא ממשיך
+לשלוח ומקבל אישורים על קבלת הסגמנטים עם הזמן
+ללא חפיפה הכוונה שהלקוח שולח סגמנט אחד ולא ממשיך עד שהוא מקבל אישור מהשרת
+שהסגמנט התקבל
+לכן עבור 3 תמונות בחיבור עם חפיפה יהיה
+rtt = rtt + t
+ועבור חיבור ללא חפיפה יהיה
+rtt = 3 * rtt + 3 * t
+
+DNS hirarchy:
+1. root
+2. top level dmoain, ex: com, edu, gov...
+3. second level domain: google.com, ucla.edu, whitehouse.gov
+
+MAC Address => Data link layer.
+IP Address => Network layer.
+
+TCP segment contains source port and destination port, seq number, ack number and checksum
+TCP segment contains OPTIONS field: 
+
+    URG Urgent pointer field is valid
+    ACK Acknowledgement field is valid
+    PSH This segment requests a push
+    RST Reset the connection
+    SYN Synchronize sequence numbers
+    FIN Sender has reached end of its byte stream 
+
+Layers:
+Application: HTTP • SMTP • FTP • RTP • IRC • SNMP • SIP • DNS • DHCP
+Presentation: MIME • ASCII • Unicode • SSL
+Session: ASP • PPTP • SSH • NFS • RPC • SOCKS
+Transportation: TCP • UDP • SCTP • DCCP
+Network: IP (IPv4 • IPv6) • ICMP • IPX 
+Data link: אתרנט • Token ring • FDDI
+Physical: E1 • 10Base-T • RS-232 • DSL • SONET
+
+Telnet:
+Telnet can be used for a variety of activities on a server, 
+including editing files, running various programs and 
+checking email. Some servers enable remote connections using Telnet 
+to access public data to play simple games or look up weather 
+reports. Many of these features exist for nostalgic fun or because 
+they still have compatibility with older systems that need access to specific data.
